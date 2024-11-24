@@ -4,6 +4,7 @@
 #include "key.h"
 
 const char* mqtt_server = "broker.emqx.io";
+const char* mqtt_topic = "nockanda/esp32/input";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -60,7 +61,7 @@ void reconnect() {
       // Once connected, publish an announcement...
       // client.publish("outTopic", "hello world"); // 불필요
       // ... and resubscribe
-      client.subscribe("nockanda/esp32/input");
+      client.subscribe(mqtt_topic);
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
