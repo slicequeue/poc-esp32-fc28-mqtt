@@ -83,7 +83,7 @@ void setup() {
   setup_wifi();
   client.setServer(mqtt_server, 1883);
   client.setCallback(callback);
-}
+}// end of setup
 
 void loop() {
 
@@ -111,7 +111,4 @@ void loop() {
     String data = "토양 습도 (%): " + String(soilMoisturePercent) + "%";
     client.publish("nockanda/esp32/output", data.c_str());
   }
-
-  // delay(1000);
-
-}
+}// end of loop
