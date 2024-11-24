@@ -77,8 +77,8 @@ const char* password = "<Wi-Fi 비밀번호>";
 
 ## 작업 단계별 소스 코드 확인
 
-- #1
-- #2
+- https://github.com/slicequeue/poc-esp32-fc28-mqtt/pull/1
+- https://github.com/slicequeue/poc-esp32-fc28-mqtt/pull/2
 
 ---
 
